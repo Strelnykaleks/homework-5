@@ -30,6 +30,7 @@ $lh5: 1.45
 // Main Styles
 *
   font-family: poppins, sans-serif
+  box-sizing: border-box
   letter-spacing: 0.75px
 a
     text-decoration: none
@@ -174,7 +175,36 @@ button
     text-align: center
     font-size: $fs4
     line-height: $lh4
-
+// about
+.about
+  padding-top: 60px
+  padding-bottom: 78px
+  .row
+    display: flex
+    align-items: center
+    margin-left: -75px
+    margin-right: -75px
+  .column 
+    width: 50%
+    padding-left: 75px
+    padding-right: 75px
+    &__title
+      color: $color2
+      font-size: $fs2
+      font-weight: normal
+      margin-bottom: 48px  
+    &__description
+      font-size: $fs3
+      line-height: $lh3
+      color: $color2
+      margin-bottom: 38px  
+    &__logotype-box
+      display: flex
+      padding-top: 10px
+    &__logo-about
+      margin-right: 48px
+    .animation
+      max-width: 504px
 // cta block
 .cta
   position: relative

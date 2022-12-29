@@ -175,36 +175,37 @@ button
     text-align: center
     font-size: $fs4
     line-height: $lh4
-// about
+// about block
 .about
+  display: flex
+  position: relative
+  flex-direction: column
   padding-top: 60px
   padding-bottom: 78px
-  .row
+  &__title
+    color: $color2
+    font-size: $fs2
+    font-weight: normal
+    margin-bottom: 48px  
+  &__description
+    font-size: $fs3
+    line-height: $lh3
+    color: $color2
+    margin-bottom: 38px
+    font-weight: normal
+    width: 560px  
+  &__logotype-box
     display: flex
-    align-items: center
-    margin-left: -75px
-    margin-right: -75px
-  .column 
-    width: 50%
-    padding-left: 75px
-    padding-right: 75px
-    &__title
-      color: $color2
-      font-size: $fs2
-      font-weight: normal
-      margin-bottom: 48px  
-    &__description
-      font-size: $fs3
-      line-height: $lh3
-      color: $color2
-      margin-bottom: 38px  
-    &__logotype-box
-      display: flex
-      padding-top: 10px
-    &__logo-about
-      margin-right: 48px
-    .animation
-      max-width: 504px
+    padding-top: 10px
+  &__logo-about
+    margin-right: 48px
+  &__animation
+      max-width: 510px
+      position: absolute
+      z-index: -100
+      width: 550px
+      top: -20px
+      right: -35px
 // cta block
 .cta
   position: relative
